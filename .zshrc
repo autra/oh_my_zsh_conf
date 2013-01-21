@@ -43,3 +43,16 @@ fi
 
 # Customize to your needs...
 ##
+
+#some environment variable
+#export PATH=$PATH:/usr/lib/jvm/java-6-sun-1.6.0.26/jre:/usr/local/apache-maven/apache-maven-3.0.3/bin
+export PATH=$PATH:/usr/local/apache-maven/apache-maven-3.0.3/bin
+##export JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64/
+export M2_HOME=/usr/local/apache-maven/apache-maven-3.0.3
+#
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+#function to rewrite tail
+. ~/function.sh
+
