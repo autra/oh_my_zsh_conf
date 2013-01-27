@@ -1,27 +1,8 @@
-alias mvncl='mvn clean install -Dmaven.test.skip=true'
-alias mvncl-t='mvn clean install'
-alias mvncl-u='mvn clean install -Dmaven.test.skip=true -U'
-alias mvni='mvn install -Dmaven.test.skip'
-alias mvninplace='mvn clean package -Dmaven.test.skip -Pinplace'
-alias mvndfo='mvn process-resources -PEkino -U'
-alias mvnbolent='mvn clean install -Dmaven.test.skip -Pbol-sbol-mock,bol-inplace,mock-ws-connectors'
-alias mvnbolent-t='mvn clean install -Pbol-sbol-mock,bol-inplace,mock-ws-connectors'
-alias mvnbolent-front='mvn clean package -pl frontoffice -Dmaven.test.skip -Pbol-sbol-mock,bol-inplace,mock-ws-connectors'
-alias mvnbolent-back='mvn clean package -pl backoffice -Dmaven.test.skip -Pbol-sbol-mock,bol-inplace,mock-ws-connectors'
-alias mvn2='M2_HOME=/usr/local/apache-maven/apache-maven-2.2.1 /usr/local/apache-maven/apache-maven-2.2.1/bin/mvn'
 
 #Alias svn
 alias svnst='svnstatus'
 alias svninfo='svn info'
 alias svnrd='svn resolved'
-
-alias tf='tail -f logs/catalina.out'
-alias start='(./bin/catalina.sh start && tf)'
-alias stop='./bin/catalina.sh stop'
-alias ..='cd ..'
-alias ~='cd ~'
-alias cdtrunkbolent='cd ~/workspace/src/bt/bol-entreprise/trunk-git/'
-
 
 alias ll='ls -alF'
 alias la='ls -A'
