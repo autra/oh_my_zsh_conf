@@ -6,6 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
+#ZSH_THEME="awesomepanda"
 ZSH_THEME="af-magic"
 
 # Example aliases
@@ -30,13 +31,13 @@ ZSH_THEME="af-magic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git mvn vi)
+plugins=(git git-extras mvn vi mercurial cp rsync tmux screen svn lol debian)
 
 source $ZSH/oh-my-zsh.sh
 
 if [ -f ~/.zsh_aliases ]; then
 	    . ~/.zsh_aliases
-fi
+    fi
 
 
 
