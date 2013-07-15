@@ -9,6 +9,7 @@ alias mvnbolent-hbm='mvn clean package -Dmaven.test.skip -Pbol-sbol-mock,bol-inp
 alias mvnbolent-t='mvn clean package -Pbol-sbol-mock,bol-inplace,mock-ws-connectors'
 alias mvnbolent-front='mvn clean package -pl frontoffice -Dmaven.test.skip -Pbol-sbol-mock,bol-inplace,mock-ws-connectors'
 alias mvnbolent-back='mvn clean package -pl backoffice -Dmaven.test.skip -Pbol-sbol-mock,bol-inplace,mock-ws-connectors'
+alias mvnbolent-admin='mvn clean package -pl frontadmin -Dmaven.test.skip -Pbol-sbol-mock,bol-inplace,mock-ws-connectors'
 alias mvn2='M2_HOME=/usr/local/apache-maven/apache-maven-2.2.1 /usr/local/apache-maven/apache-maven-2.2.1/bin/mvn'
 
 #Alias svn
@@ -27,3 +28,5 @@ alias cdtrunkbolent='cd ~/workspace/src/bt/bol-entreprise/trunk-git/'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+alias bolSsoRequest="curl http://localhost:8080/ssorequest -d ip=127.0.0.1 | sed 's;.*<tokenId>\(.*\)</tokenId>.*;\1;'"
