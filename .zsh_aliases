@@ -17,6 +17,11 @@ alias svnst='svnstatus'
 alias svninfo='svn info'
 alias svnrd='svn resolved'
 
+#alias git
+alias gitst='git st'
+alias gitdi='git di'
+alias gitdist='git di --staged'
+
 alias tf='tail -f logs/catalina.out'
 alias start='(./bin/catalina.sh start && tf)'
 alias stop='./bin/catalina.sh stop'
@@ -30,3 +35,4 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+alias xop='xdg-open'
